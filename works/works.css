@@ -1,0 +1,25 @@
+.mypdf {
+  margin-left: 15px;
+  margin-top: 10px;
+  box-shadow: -3px -3px 5px #ff004f;
+  width: 100%;
+  height: 700px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+h1{
+  color: #ff004f;
+  margin-left: 25px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    box-shadow: -3px 0px 5px#ff004f;
+    margin-left: 20px;
+  }
+  .mypdf {
+    box-shadow:none;
+    margin-left: 25px;
+    height: 1000px;
+  }
+}

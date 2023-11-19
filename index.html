@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>surajys.com</title>
+    <link rel="shortcut icon" class="sys" href="images/SYSS.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9e04686069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hello, my name is</p>
+          <h1>
+            <span> <span class="s">S</span>uraj Y S</span>
+            <div class="text-3">
+              And I'm an
+              <span class="typing1"><span class="typing"></span></span>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------about-------------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Seeking a challenging opportunity in an Organization to excel and
+              grow along with the organization by utilizing my knowledge and
+              acquired skills towards fulfillment of organizational vision.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Architecture</span> <br />
+                  Conceptual building planning, design, 2D plans, construction
+                  and management.
+                </li>
+                <li>
+                  <span>Interior design</span> <br />
+                  Interior design,drawing and renders, execution services, mood
+                  boards, lighting design.
+                </li>
+                <li>
+                  <span>UI UX design</span> <br />
+                  Developing web and application user experience and interface.
+                </li>
+                <li>
+                  <span>3D Atrist and animator</span> <br />
+                  3D Visualisation, Renders, Walkthrough, 2D Renders,Editing,
+                  Animation etc.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 </span> <br />
+                  Freelance - Architectural Services
+                </li>
+                <li>
+                  <span>2022 </span> <br />
+                  Full-time Architectural Intern @PVL Design Studio
+                </li>
+                <li>
+                  <span>2021 </span> <br />
+                  Part-time Architectural Intern @PVL Design Studio
+                </li>
+                <li>
+                  <span>2019 </span> <br />
+                  Civil Engineering Expert @Chegg
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2018 - 2023 </span> <br />
+                  Bachelor of architecture, School of Planning and Architecture,
+                  Vijayawada, AP.
+                </li>
+                <li>
+                  <span>2018</span> <br />
+                  12th Science, Jawahar Navodaya Vidyalaya, Chikkamagalur,
+                  Karnataka.
+                </li>
+                <li>
+                  <span>2016</span> <br />
+                  10th Standard, Jawahar Navodaya Vidyalaya, Chikkamagalur,
+                  Karnataka.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------services --------------------------- -->
+    <div id="services">
+      <div class="container" id="blur">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div id="Architecture">
+            <i class="fa-solid fa-house-chimney"></i>
+            <h2>Architecture</h2>
+            <ul>
+              <li>Architectural Design</li>
+              <li>Construction Documentation</li>
+              <li>Site Analysis and Planning</li>
+              <li>Sustainable Design</li>
+              <li>Landscape Design</li>
+              <li>Project Management</li>
+              <li>Building Regulations and Codes</li>
+              <li>Attention to Detail</li>
+            </ul>
+            <a href="#services" onclick="toggle()" id="learn-more"
+              >Learn more</a
+            >
+          </div>
+          <div id="InteriorDesign">
+            <i class="fa-solid fa-couch"></i>
+            <h2>Interior Design</h2>
+            <ul>
+              <li>Space Planning</li>
+              <li>Concept Development</li>
+              <li>Material and Colour Selection</li>
+              <li>Furniture and Fixture Selection</li>
+              <li>Lighting Design</li>
+              <li>Textile and Soft Furnishings</li>
+              <li>Custom Design Elements</li>
+              <li>Project Management</li>
+            </ul>
+            <a href="#services" onclick="toggle1()" id="learn-more1"
+              >Learn more</a
+            >
+          </div>
+          <div id="UXDesign">
+            <i class="fa-solid fa-tablet-screen-button"></i>
+            <h2>UI/UX Design</h2>
+            <ul>
+              <li>User Interface (UI) Design</li>
+              <li>User Experience (UX) Design</li>
+              <li>User Persona</li>
+              <li>Information Architecture</li>
+              <li>Interaction Design</li>
+              <li>Wireframes</li>
+              <li>Collaborative Approach</li>
+              <li>Current Design Trends and Technologies</li>
+            </ul>
+            <a href="#services" onclick="toggle2()" id="learn-more2"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <a href="services.html" class="btn">See more</a>
+      </div>
+      <div id="popup1" class="popup">
+        <a href="#Architecture" onclick="toggle()" id="close">Close</a>
+        <div class="main-popup">
+          <div class="left-popup">
+            <div>
+              <h3>Architectural Design:</h3>
+              <p>
+                Creation of innovative and functional architectural designs.
+                Incorporation of aesthetic appeal, functionality, and client
+                requirements. Integration of spatial planning, building systems,
+                and design principles.
+              </p>
+            </div>
+            <div>
+              <h3>Construction Documentation:</h3>
+              <p>
+                Preparation of detailed and accurate construction documents.
+                Creation of drawings, specifications, and technical details.
+                Ensuring compliance with construction standards and regulations.
+              </p>
+            </div>
+
+            <div>
+              <h3>Site Analysis and Planning:</h3>
+              <p>
+                Thorough analysis of the site's conditions, including
+                topography, climate, and context. Evaluation of site constraints
+                and opportunities to inform the design process. Development of
+                site plans that optimize the use of space and enhance the
+                overall design.
+              </p>
+            </div>
+            <div>
+              <h3>Sustainable Design:</h3>
+              <p>
+                Integration of environmentally friendly and energy-efficient
+                design strategies. Incorporation of sustainable materials,
+                systems, and technologies. Consideration of long-term
+                environmental impact and resource conservation.
+              </p>
+            </div>
+          </div>
+          <div class="right-popup">
+            <div>
+              <h3>Landscape Design:</h3>
+              <p>
+                Designing outdoor spaces that harmonize with the natural
+                surroundings. Selection and arrangement of plants, trees, and
+                hardscape elements. Creating functional and aesthetically
+                pleasing landscapes that meet client needs.
+              </p>
+            </div>
+
+            <div>
+              <h3>Project Management:</h3>
+              <p>
+                Overseeing all stages of the architectural process, from concept
+                to completion. Managing budgets, schedules, and resources
+                effectively. Coordinating with contractors, consultants, and
+                other stakeholders to ensure project success.
+              </p>
+            </div>
+            <div>
+              <h3>Building Regulations and Codes:</h3>
+              <p>
+                Thorough knowledge of local building regulations and codes.
+                Ensuring compliance with safety standards and legal
+                requirements. Obtaining necessary permits and approvals for
+                construction projects.
+              </p>
+            </div>
+            <div>
+              <h3>Attention to Detail:</h3>
+              <p>
+                Meticulous focus on every aspect of the design and construction
+                process. Ensuring accuracy and precision in documentation and
+                implementation. Upholding high standards of quality and
+                craftsmanship.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="down-popup">
+          <p>
+            By excelling in these areas, I am dedicated to delivering
+            exceptional architectural designs, construction documentation, and
+            project management services while adhering to building regulations,
+            incorporating sustainable practices, and paying attention to even
+            the smallest details.
+          </p>
+        </div>
+      </div>
+      <!-- -------------- interior popup ------------- -->
+
+      <div id="popup2" class="popup">
+        <a href="#InteriorDesign" onclick="toggle1()" id="close1">Close</a>
+        <div class="main-popup">
+          <div class="left-popup">
+            <div>
+              <h3>Space Planning:</h3>
+              <p>
+                Efficiently organizing and optimizing interior spaces Maximizing
+                functionality and flow within the space Ensuring effective
+                utilization of available space.
+              </p>
+            </div>
+            <div>
+              <h3>Concept Development:</h3>
+              <p>
+                Developing unique and innovative design concepts Reflecting the
+                client's vision and style preferences Creating a cohesive and
+                cohesive design narrative.
+              </p>
+            </div>
+
+            <div>
+              <h3>Material and Colour Selection:</h3>
+              <p>
+                Expertise in selecting appropriate materials and finishes
+                Considering durability, aesthetics, and client preferences
+                Harmonizing colours and textures for a cohesive design scheme.
+              </p>
+            </div>
+            <div>
+              <h3>Furniture and Fixture Selection:</h3>
+              <p>
+                Curating furniture pieces and fixtures that complement the
+                design concept Ensuring functionality, comfort, and visual
+                appeal Considering scale, proportion, and client needs.
+              </p>
+            </div>
+          </div>
+          <div class="right-popup">
+            <div>
+              <h3>Lighting Design:</h3>
+              <p>
+                Creating effective lighting plans to enhance the ambiance and
+                functionality Balancing task, accent, and ambient lighting
+                Incorporating energy-efficient and sustainable lighting
+                solutions.
+              </p>
+            </div>
+            <div>
+              <h3>Textile and Soft Furnishings:</h3>
+              <p>
+                Selecting textiles, fabrics, and soft furnishings that add
+                warmth and comfort Enhancing visual appeal and texture in the
+                space Creating a cosy and inviting atmosphere.
+              </p>
+            </div>
+            <div>
+              <h3>Custom Design Elements:</h3>
+              <p>
+                Designing custom-built furniture, cabinetry, and architectural
+                details Adding unique and personalized touches to the space
+                Tailoring the design to the client's specific requirements.
+              </p>
+            </div>
+            <div>
+              <h3>Project Management:</h3>
+              <p>
+                Overseeing all aspects of the interior design project Managing
+                budgets, schedules, and resources effectively Coordinating with
+                contractors, vendors, and other stakeholders.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="down-popup">
+          <p>
+            By excelling in these areas, I am dedicated to delivering
+            exceptional interior design solutions that optimize functionality,
+            aesthetics, and client satisfaction.
+          </p>
+        </div>
+      </div>
+      <!-- -----------------UI - UX popup ----------- -->
+
+      <div class="popup" id="popup3">
+        <a href="#UXDesign" onclick="toggle2()" id="close2">Close</a>
+        <div class="main-popup">
+          <div class="left-popup">
+            <div>
+              <h3>User Interface (UI) Design:</h3>
+              <p>
+                Creating visually appealing and user-friendly interfaces for
+                digital products and applications. Focusing on layout,
+                typography, colour schemes, and visual elements to enhance
+                usability and aesthetics. Applying design principles and best
+                practices to create intuitive and engaging user interfaces.
+              </p>
+            </div>
+            <div>
+              <h3>User Experience (UX) Design:</h3>
+              <p>
+                Designing seamless and enjoyable experiences for users.
+                Conducting user research to understand their needs, goals, and
+                behaviors. Creating user personas to represent target users and
+                guide design decisions.
+              </p>
+            </div>
+
+            <div>
+              <h3>User Persona:</h3>
+              <p>
+                Developing fictional characters that represent different user
+                types. Incorporating demographic information, goals,
+                motivations, and pain points of the target audience. Using
+                personas as a reference to ensure designs cater to the needs and
+                preferences of specific user groups.
+              </p>
+            </div>
+            <div>
+              <h3>Information Architecture:</h3>
+              <p>
+                Organizing and structuring information in a clear and logical
+                manner. Creating intuitive navigation systems and content
+                hierarchies. Ensuring users can easily find and access the
+                information they need.
+              </p>
+            </div>
+          </div>
+          <div class="right-popup">
+            <div>
+              <h3>Interaction Design:</h3>
+              <p>
+                Designing interactive elements and defining user interactions.
+                Creating intuitive and responsive interfaces that encourage
+                engagement. Balancing user expectations, usability, and business
+                goals in interaction design.
+              </p>
+            </div>
+
+            <div>
+              <h3>Wireframes:</h3>
+              <p>
+                Developing low-fidelity (lo-fi) and high-fidelity (hi-fi)
+                wireframes to visualize and communicate design concepts. Lo-fi
+                wireframes for quick ideation and iteration. Hi-fi wireframes
+                for detailed representation of the final design.
+              </p>
+            </div>
+
+            <div>
+              <h3>Collaborative Approach:</h3>
+              <p>
+                Working closely with stakeholders, developers, and other team
+                members throughout the design process. Incorporating feedback
+                and ideas from various perspectives. Encouraging effective
+                communication and teamwork to achieve the best design outcome.
+              </p>
+            </div>
+            <div>
+              <h3>Current Design Trends and Technologies:</h3>
+              <p>
+                Staying updated with the latest design trends, techniques, and
+                technologies. Embracing emerging design tools and software.
+                Incorporating innovative design approaches and staying ahead of
+                industry standards.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="down-popup">
+          <p>
+            By excelling in these areas, I am dedicated to delivering
+            exceptional UI/UX design solutions that prioritize user needs,
+            create engaging experiences, and leverage the latest design trends
+            and technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------- portfolio ------------------- -->
+    <div id="portfolio">
+      <div class="container container1">
+        <h1 class="sub-title">My Work</h1>
+        <div class="icons icons1">
+          <a
+            href="https://issuu.com/surajys"
+            ,
+            target="_blank"
+            class="icon icon--issuu"
+          >
+            <img src="images/issuuuu.png" />
+          </a>
+          <a
+            href="https://instagram.com/architects.sys?igshid=MzNlNGNkZWQ4Mg=="
+            ,
+            target="_blank"
+            class="icon icon--instagram icon--instagram1"
+          >
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/surajys111/"
+            ,
+            target="_blank"
+            class="icon icon--linkedin"
+          >
+            <i class="ri-linkedin-line"></i>
+          </a>
+          <a
+            href="https://in.pinterest.com/suajys111/"
+            ,
+            target="_blank"
+            class="icon icon--pinterset"
+          >
+            <i class="ri-pinterest-line"></i>
+          </a>
+          <a
+            href="https://www.behance.net/surajys111"
+            ,
+            target="_blank"
+            class="icon icon--behance"
+          >
+            <i class="ri-behance-line"></i>
+          </a>
+          <a
+            href="https://dribbble.com/surajys111"
+            ,
+            target="_blank"
+            class="icon icon--dribbble"
+          >
+            <i class="ri-dribbble-line"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/suraj.ys.58/"
+            ,
+            target="_blank"
+            class="icon icon--facebook"
+          >
+            <i class="ri-facebook-line"></i>
+          </a>
+          <a
+            href="https://github.com/surajys111"
+            ,
+            target="_blank"
+            class="icon icon--github"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+        </div>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/architect.jpg" />
+            <div class="layer">
+              <h3>Architecture</h3>
+              <a href="works/Architecture.html" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/interior1.jpg" />
+            <div class="layer">
+              <h3>Interior Design</h3>
+              <a href="works/InteriorDesign.html" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/mockup.jpg" />
+            <div class="layer">
+              <h3>UI/UX Design</h3>
+              <a href="works/UIUX.html" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="my-works.html" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ------------- Contact ------------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> surajsundresh111@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i> 7259479377</p>
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/surajys111/"
+                ,
+                target="_blank"
+                class="icon icon--linkedin"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a
+                href="https://instagram.com/architects.sys?igshid=MzNlNGNkZWQ4Mg=="
+                ,
+                target="_blank"
+                class="icon icon--instagram"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/suraj.ys.58/"
+                ,
+                target="_blank"
+                class="icon icon--facebook"
+              >
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a
+                href="https://github.com/surajys111"
+                ,
+                target="_blank"
+                class="icon icon--github"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+            </div>
+            <div class="download">
+              <a
+                href="images/my-cv.pdf"
+                download
+                class="btn btn2"
+                target="_blank"
+                >Download CV</a
+              >
+              <a
+                href="images/my-portfolio.pdf"
+                download
+                class="btn btn2 btn3"
+                target="_blank"
+                >Download Portfolio</a
+              >
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Created By <span class="S">S</span>uraj. | © 2023 All rights reserved
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      // typing text animation script
+      var typed = new Typed(".typing", {
+        strings: [
+          "Architect",
+          "Interior Designer",
+          "UI UX Designer",
+          "Product Designer",
+          "Animation/Graphics Artist",
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwGryvM7wCAYFuYPRFUVicoLvlNS3F6mAeFfR0ZJkXK6UYBQ-U-GcWKMeM1sNluVIWqOg/exec ";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript">
+      function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup1");
+        popup.classList.toggle("active");
+      }
+    </script>
+    <script type="text/javascript">
+      function toggle1() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup2");
+        popup.classList.toggle("active");
+      }
+    </script>
+    <script type="text/javascript">
+      function toggle2() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup3");
+        popup.classList.toggle("active");
+      }
+    </script>
+    <script>
+      document
+        .querySelector("#learn-more")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.overflow = "scroll";
+          document.querySelector("body").style.overflow = "hidden";
+        });
+      document.querySelector("#close").addEventListener("click", function () {
+        document.querySelector(".popup").style.overflow = "hidden";
+        document.querySelector("body").style.overflow = "scroll";
+      });
+    </script>
+    <script>
+      document
+        .querySelector("#learn-more1")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.overflow = "scroll";
+          document.querySelector("body").style.overflow = "hidden";
+        });
+      document.querySelector("#close1").addEventListener("click", function () {
+        document.querySelector(".popup").style.overflow = "hidden";
+        document.querySelector("body").style.overflow = "scroll";
+      });
+    </script>
+    <script>
+      document
+        .querySelector("#learn-more2")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.overflow = "scroll";
+          document.querySelector("body").style.overflow = "hidden";
+        });
+      document.querySelector("#close2").addEventListener("click", function () {
+        document.querySelector(".popup").style.overflow = "hidden";
+        document.querySelector("body").style.overflow = "scroll";
+      });
+    </script>
+  </body>
+</html>
